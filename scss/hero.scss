@@ -1,0 +1,35 @@
+.hero {
+  min-height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/foodhero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  .callout {
+    margin-right: 100px;
+    color: white;
+    font-family: $raleway;
+    text-align: center;
+
+    h2 {
+      font-size: 500%;
+      font-family: $quicksand;
+    }
+    h1 {
+      font-size: 230%;
+    }
+
+    h4 {
+      font-size: 230%;
+    }
+  }
+}

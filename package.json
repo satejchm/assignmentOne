@@ -1,0 +1,19 @@
+{
+  "name": "assignmentone",
+  "version": "1.0.0",
+  "description": "assignment one",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test",
+    "compile": "node-sass scss/main.scss css/main.css -w",
+    "live": "live-server"
+  },
+  "author": "sarah tejchma",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^13.6.0"
+  }
+}

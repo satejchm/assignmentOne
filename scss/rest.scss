@@ -1,0 +1,349 @@
+//stylingd for the restaurants section
+#rest {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .header-holder {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    min-height: 50px;
+    h1 {
+      font-size: 300%;
+      font-family: $quicksand;
+    }
+  }
+
+  .rest-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+    min-height: 100%;
+
+    a {
+      text-decoration: none;
+    }
+    .rest-info-fogo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/fogo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        font-family: $raleway;
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/fogo.jpg);
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+
+    .rest-info-cap {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/cap.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+      h3,
+      h4 {
+        display: none;
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/cap.jpg);
+
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+
+    .rest-info-bru {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/bru.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        display: none;
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/bru.jpg);
+
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+
+    .rest-info-fogo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/fogo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        font-family: $raleway;
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/fogo.jpg);
+        h3,
+        h4 {
+          display: block;
+          //background-color: rgb(255, 195, 117);
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .rest-info-blue {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/blue.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        font-family: $raleway;
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/blue.jpg);
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+
+    .rest-info-ruth {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/ruth.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        font-family: $raleway;
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/ruth.jpg);
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+
+    .rest-info-elmo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../assets/stelmos.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: $raleway;
+      }
+
+      h3,
+      h4 {
+        font-family: $raleway;
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)),
+          url(../assets/stelmos.jpg);
+        h3,
+        h4 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #rest {
+    .rest-holder {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.nav-holder {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .nav-holder nav {
+    z-index: 99;
+    width: 80%;
+    height: 70px;
+    color: white;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .nav-holder nav .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border: 2px solid white;
+      border-radius: 5px; }
+      .nav-holder nav .logo a {
+        color: white;
+        font-size: 300%;
+        font-weight: bold;
+        font-family: "Quicksand", sans-serif;
+        text-decoration: none; }
+        .nav-holder nav .logo a:hover {
+          color: orange; }
+    .nav-holder nav .link-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 30%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .nav-holder nav .link-wrap .links {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+        .nav-holder nav .link-wrap .links a {
+          color: white;
+          font-size: 20px;
+          text-decoration: none; }
+          .nav-holder nav .link-wrap .links a:hover {
+            color: orange; }
+      .nav-holder nav .link-wrap .navicon {
+        display: none;
+        color: white;
+        font-size: 120%;
+        cursor: pointer; }
+
+@media (max-width: 900px) {
+  .nav-holder nav .link-wrap {
+    margin-top: 150px;
+    padding-top: 50px; }
+    .nav-holder nav .link-wrap:hover > .links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .nav-holder nav .link-wrap .links {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-right: -30px;
+      width: 120px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5px; }
+      .nav-holder nav .link-wrap .links a {
+        margin-bottom: 20px; }
+    .nav-holder nav .link-wrap .navicon {
+      margin-top: -115px;
+      margin-right: -175px;
+      display: block;
+      color: white;
+      font-size: 160%; } }
+
+.hero {
+  min-height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/foodhero.jpg);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/foodhero.jpg);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/foodhero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/foodhero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right; }
+  .hero .callout {
+    margin-right: 100px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center; }
+    .hero .callout h2 {
+      font-size: 500%;
+      font-family: "Quicksand", sans-serif; }
+    .hero .callout h1 {
+      font-size: 230%; }
+    .hero .callout h4 {
+      font-size: 230%; }
+
+#about {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #about .about-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 80%; }
+    #about .about-holder .image-holder {
+      width: 50%;
+      height: 600px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/cityfood.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cityfood.jpg);
+      background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cityfood.jpg);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cityfood.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      border-radius: 5px; }
+    #about .about-holder .info-holder {
+      width: 60%;
+      margin-left: 50px; }
+      #about .about-holder .info-holder h1 {
+        font-family: "Quicksand", sans-serif;
+        font-size: 300%; }
+      #about .about-holder .info-holder p {
+        margin-top: 60px;
+        font-family: "Raleway", sans-serif;
+        font-size: 20px; }
+
+@media (max-width: 800px) {
+  #about .about-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #about .about-holder .image-holder {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px; }
+    #about .about-holder .info-holder {
+      margin-left: 0px; }
+      #about .about-holder .info-holder p {
+        margin-top: 20px; } }
+
+#rest {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #rest .header-holder {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 50px; }
+    #rest .header-holder h1 {
+      font-size: 300%;
+      font-family: "Quicksand", sans-serif; }
+  #rest .rest-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+    min-height: 100%; }
+    #rest .rest-holder a {
+      text-decoration: none; }
+    #rest .rest-holder .rest-info-fogo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/fogo.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-fogo h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-fogo h3,
+      #rest .rest-holder .rest-info-fogo h4 {
+        font-family: "Raleway", sans-serif;
+        display: none;
+        color: white; }
+      #rest .rest-holder .rest-info-fogo:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/fogo.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg); }
+        #rest .rest-holder .rest-info-fogo:hover h3,
+        #rest .rest-holder .rest-info-fogo:hover h4 {
+          display: block; }
+    #rest .rest-holder .rest-info-cap {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/cap.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cap.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cap.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/cap.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-cap h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-cap h3,
+      #rest .rest-holder .rest-info-cap h4 {
+        display: none;
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-cap:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/cap.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/cap.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/cap.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/cap.jpg); }
+        #rest .rest-holder .rest-info-cap:hover h3,
+        #rest .rest-holder .rest-info-cap:hover h4 {
+          display: block; }
+    #rest .rest-holder .rest-info-bru {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/bru.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/bru.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/bru.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/bru.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-bru h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-bru h3,
+      #rest .rest-holder .rest-info-bru h4 {
+        display: none;
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-bru:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/bru.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/bru.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/bru.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/bru.jpg); }
+        #rest .rest-holder .rest-info-bru:hover h3,
+        #rest .rest-holder .rest-info-bru:hover h4 {
+          display: block; }
+    #rest .rest-holder .rest-info-fogo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/fogo.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/fogo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-fogo h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-fogo h3,
+      #rest .rest-holder .rest-info-fogo h4 {
+        font-family: "Raleway", sans-serif;
+        display: none;
+        color: white; }
+      #rest .rest-holder .rest-info-fogo:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/fogo.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/fogo.jpg); }
+        #rest .rest-holder .rest-info-fogo:hover h3,
+        #rest .rest-holder .rest-info-fogo:hover h4 {
+          display: block;
+          border-radius: 5px; }
+    #rest .rest-holder .rest-info-blue {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/blue.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/blue.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/blue.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/blue.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-blue h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-blue h3,
+      #rest .rest-holder .rest-info-blue h4 {
+        font-family: "Raleway", sans-serif;
+        display: none;
+        color: white; }
+      #rest .rest-holder .rest-info-blue:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/blue.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/blue.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/blue.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/blue.jpg); }
+        #rest .rest-holder .rest-info-blue:hover h3,
+        #rest .rest-holder .rest-info-blue:hover h4 {
+          display: block; }
+    #rest .rest-holder .rest-info-ruth {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/ruth.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/ruth.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/ruth.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/ruth.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-ruth h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-ruth h3,
+      #rest .rest-holder .rest-info-ruth h4 {
+        font-family: "Raleway", sans-serif;
+        display: none;
+        color: white; }
+      #rest .rest-holder .rest-info-ruth:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/ruth.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/ruth.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/ruth.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/ruth.jpg); }
+        #rest .rest-holder .rest-info-ruth:hover h3,
+        #rest .rest-holder .rest-info-ruth:hover h4 {
+          display: block; }
+    #rest .rest-holder .rest-info-elmo {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/stelmos.jpg);
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/stelmos.jpg);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/stelmos.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/stelmos.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #rest .rest-holder .rest-info-elmo h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif; }
+      #rest .rest-holder .rest-info-elmo h3,
+      #rest .rest-holder .rest-info-elmo h4 {
+        font-family: "Raleway", sans-serif;
+        display: none;
+        color: white; }
+      #rest .rest-holder .rest-info-elmo:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 195, 117, 0.2))), url(../assets/stelmos.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/stelmos.jpg);
+        background-image: -o-linear-gradient(left, rgba(255, 195, 117, 0.2)), url(../assets/stelmos.jpg);
+        background-image: linear-gradient(to right, rgba(255, 195, 117, 0.2)), url(../assets/stelmos.jpg); }
+        #rest .rest-holder .rest-info-elmo:hover h3,
+        #rest .rest-holder .rest-info-elmo:hover h4 {
+          display: block; }
+
+@media (max-width: 600px) {
+  #rest .rest-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+.footer-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .footer-wrapper .footer {
+    margin: 0 auto;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif; }
+    .footer-wrapper .footer .copyright {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-transform: lowercase;
+      color: white;
+      font-size: 20px; }
+
+@media (max-width: 600px) {
+  .footer-wrapper .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
